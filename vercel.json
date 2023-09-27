@@ -2,15 +2,15 @@
     "version": 2,
     "builds": [
       {
-        "src": "index.js",
+        "src": "./index.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
-      { "src": "/", "dest": "/index.js" }
-    ],
-    "env": {
-      "BROWSERLESS_URL": "wss://chrome.browserless.io?token=9883aff7-00df-4cef-a4e2-e583303a1975"
-    }
+      {
+        "src": "/(.*)",
+        "dest": "/"
+      }
+    ]
   }
   

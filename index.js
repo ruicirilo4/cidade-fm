@@ -32,7 +32,7 @@ async function getNowPlayingInfo() {
 }
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/cidadefm.html");
+  res.sendFile(__dirname + "/index.html");
 });
 
 app.get("/now-playing", async (req, res) => {
